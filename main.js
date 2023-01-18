@@ -1,25 +1,25 @@
 if (localStorage.getItem("calorie-goal") != null) {
     document.getElementById('calorie-goal').innerHTML = localStorage.getItem("calorie-goal");
 } else {
-    document.getElementById('protein-goal').innerHTML = 'None';
+    document.getElementById('protein-goal').innerHTML = 2000;
 }
 
 if (localStorage.getItem("protein-goal") != null) {
     document.getElementById('protein-goal').innerHTML = localStorage.getItem("protein-goal");
 } else {
-    document.getElementById('protein-goal').innerHTML = 'None';
+    document.getElementById('protein-goal').innerHTML = 50;
 }
 
 if (localStorage.getItem("fat-goal") != null) {
     document.getElementById('fat-goal').innerHTML = localStorage.getItem("fat-goal");
 } else {
-    document.getElementById('fat-goal').innerHTML = 'None';
+    document.getElementById('fat-goal').innerHTML = 65;
 }
 
 if (localStorage.getItem("carb-goal") != null) {
     document.getElementById('carb-goal').innerHTML = localStorage.getItem("carb-goal");
 } else {
-    document.getElementById('carb-goal').innerHTML = 'None';
+    document.getElementById('carb-goal').innerHTML = 300;
 }
 
 function updateCalories() {
