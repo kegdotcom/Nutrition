@@ -5,16 +5,17 @@
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
+        <script src="/main.js"></script>
         <ul class="top">
             <li class="top-item" id="dropdown">
                 <a href="javascript:void(0)" class="dropdown-button">&nabla;</a>
                 <div class="dropdown-content">
-                    <a href="#today">Today</a>
-                    <a href="#goals">My Goals</a>
-                    <a href="#food">My Foods</a>
+                    <a href="/views/today.html">Today</a>
+                    <a href="/views/goals.html">My Goals</a>
+                    <a href="/views/food.html">My Foods</a>
                 </div>
             </li>
-            <li class="top-item" id="topname"><a href="#index">Nutirtion Tracker</a></li>
+            <li class="top-item" id="topname"><a href="/views/today.html">Nutirtion Tracker</a></li>
             <li class="top-item" id="add-button"><button id="plus">&plus;</button></li>
         </ul>
         <table class="goal-table">
@@ -25,36 +26,36 @@
                 <th>Carbohydrates</th>
             </tr>
             <tr>
-                <td id="protein-goal">0</td>
+                <td id="calorie-goal">0</td>
                 <td id="protein-goal">0</td>
                 <td id="fat-goal">0</td>
                 <td id="carb-goal">0</td>
             </tr>
             <tr>
                 <td>
-                    <form class="change-goal">
-                        <input class="new-goal" type="text" placeholder="New Goal">
+                    <form class="change-goal" onsubmit="updateCalories()">
+                        <input class="new-goal" id="new-calorie-goal" type="text" placeholder="New Goal">
                         <br>
                         <input class="submit-goal" type="submit" value="Change">
                     </form>
                 </td>
                 <td>
-                    <form class="change-goal">
-                        <input class="new-goal" type="text" placeholder="New Goal">
+                    <form class="change-goal" onsubmit="updateProtein()">
+                        <input class="new-goal" id="new-protein-goal" type="text" placeholder="New Goal">
                         <br>
                         <input class="submit-goal" type="submit" value="Change">
                     </form>
                 </td>
                 <td>
-                    <form class="change-goal">
-                        <input class="new-goal" type="text" placeholder="New Goal">
+                    <form class="change-goal" onsubmit="updateFat()">
+                        <input class="new-goal" id="new-fat-goal" type="text" placeholder="New Goal">
                         <br>
                         <input class="submit-goal" type="submit" value="Change">
                     </form>
                 </td>
                 <td>
-                    <form class="change-goal">
-                        <input class="new-goal" type="text" placeholder="New Goal">
+                    <form class="change-goal" onsubmit="updateCarbs()">
+                        <input class="new-goal" id="new-carb-goal" type="text" placeholder="New Goal">
                         <br>
                         <input class="submit-goal" type="submit" value="Change">
                     </form>

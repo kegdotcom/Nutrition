@@ -80,11 +80,20 @@ li#dropdown {
     color: rgba(240, 240, 255, 1);
 }
 
+.goal-table td, .goal-table th {
+    margin-top: 10px;
+}
+
 input.new-goal, input.submit-goal {
     background-color: rgba(32, 32, 128, 1);
+    color: rgba(240, 240, 255, 1);
     border: 0;
-    margin: 5px;
+    border-radius: 5px;
     text-align: center;
+}
+
+input.submit-goal {
+    margin-top: 5px;
 }
 
 input.new-goal::placeholder {
