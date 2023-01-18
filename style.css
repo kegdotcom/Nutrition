@@ -35,7 +35,7 @@ ul.top {
 li.top-item a, li.top-item button, .top-item, .dropdown-button {
     display: inline-block;
     background-color: rgba(32, 32, 128, 1);
-    color: white;
+    color: rgba(240, 240, 255, 1);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -72,10 +72,21 @@ li#dropdown {
     display: block;
 }
 
-form.change-goal input {
+.goal-table {
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: rgba(240, 240, 255, 1);
+}
+
+input.new-goal, input.submit-goal {
     background-color: rgba(32, 32, 128, 1);
-    color: white;
     border: 0;
     margin: 5px;
     text-align: center;
+}
+
+input.new-goal::placeholder {
+    color: rgba(240, 240, 255, 0.75);
 }
