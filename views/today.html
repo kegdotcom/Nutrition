@@ -17,14 +17,17 @@
                     <a href="/views/food.html">My Foods</a>
                 </div>
             </li>
-            <li class="top-item" id="topname"><a href="/views/today.html">Nutirtion Tracker</a></li>
+            <li class="top-item" id="topname"><a href="/views/today.html">Nutrition Tracker</a></li>
             <li class="top-item" id="add-button"><button id="plus">&plus;</button></li>
         </ul>
         <div class="progresses">
-            <progress></progress>
-            <progress></progress>
-            <progress></progress>
-            <progress></progress>
+            <div class="macro-line"><h3>Calories:</h3><progress class="macro-progress" id="calorie-progress" value=0 max=2000>Calories</progress></div>
+            <br>
+            <div class="macro-line"><h3>Protein:</h3><progress class="macro-progress" id="protein-progress" value=0 max=50>Protein</progress></div>
+            <br>
+            <div class="macro-line"><h3>Fat:</h3><progress class="macro-progress" id="fat-progress" value=0 max=65>Fat</progress></div>
+            <br>
+            <div class="macro-line"><h3>Carbohydrates:</h3><progress class="macro-progress" id="carb-progress" value=0 max=300></progress></div>
         </div>
     </body>
 </html>

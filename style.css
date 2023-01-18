@@ -22,6 +22,8 @@ ul.top {
 
 #dropdown, #topname {
     float: left;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 #add-button {
@@ -98,4 +100,28 @@ input.submit-goal {
 
 input.new-goal::placeholder {
     color: rgba(240, 240, 255, 0.75);
+}
+
+div.progresses {
+    margin: 10px;
+}
+
+div.macro-line {
+    display: flex;
+    align-items: center;
+}
+
+.macro-progress {
+    display: inline-block;
+    width:80%;
+    height: 48px;
+    margin: 0;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 18px;
+    color: rgba(240, 240, 255, 1);
+    width: 15%;
+    margin-right: 5%;
 }
