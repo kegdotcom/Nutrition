@@ -1,0 +1,81 @@
+html {
+    background-color: rgba(32, 32, 48, 1);
+}
+
+body {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+ul.top {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    background-color: rgba(32, 32, 128, 1);
+}
+
+#dropdown, #topname {
+    float: left;
+}
+
+#add-button {
+    float: right;
+}
+
+#plus {
+    border-radius: 50%;
+}
+
+li.top-item a, li.top-item button, .top-item, .dropdown-button {
+    display: inline-block;
+    background-color: rgba(32, 32, 128, 1);
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.top-item a:hover, .top-item button:hover, #dropdown:hover .dropdown-button {
+    background-color: rgba(32, 32, 48, 1);
+}
+
+li#dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: inherit;
+    min-width: 10%;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(32, 32, 48, 1);
+}
+
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+form.change-goal input {
+    background-color: rgba(32, 32, 128, 1);
+    color: white;
+    border: 0;
+    margin: 5px;
+    text-align: center;
+}
