@@ -7,16 +7,45 @@
     <body>
         <ul class="top">
             <li class="top-item" id="dropdown">
-                <a href="javascript:void(0)" class="dropdown-button">&nabla;</a>
+                <a href="javascript:void(0)" class="dropdown-button"><div id="dropdown-text">&nabla;</div></a>
                 <div class="dropdown-content">
                     <a href="/views/today.html">Today</a>
+                    <br>
                     <a href="/views/goals.html">My Goals</a>
+                    <br>
                     <a href="/views/food.html">My Foods</a>
                 </div>
             </li>
             <li class="top-item" id="topname"><a href="/views/today.html">Nutrition Tracker</a></li>
-            <li class="top-item" id="add-button"><button id="plus">&plus;</button></li>
+            <li class="top-item" id="add-button">
+                <button id="plus" onclick="document.getElementById('modal').style.display='block'">&plus;</button>
+            </li>
         </ul>
+
+        <div id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h3 id="modal-title">Add Item</h3>
+                    <button id="modal-close" onclick="document.getElementById('modal').style.display='none'">&times;</button>
+                </header>
+                <div class="modal-tabs">
+                    <button id="meal-button" class="modal-tab-button" onclick="openModalTab(event, 'meal')">Meal</button>
+                    <button id="food-button" class="modal-tab-button" onclick="openModalTab(event, 'food')">Food</button>
+                    <button id="day-button" class="modal-tab-button" onclick="openModalTab(event, 'day')">Day</button>
+                </div>
+
+                <div id="meal" class="modal-body">
+                    <p>meal tab</p>
+                </div>
+                <div id="food" class="modal-body">
+                    <p>food tab</p>
+                </div>
+                <div id="day" class="modal-body">
+                    <p>day tab</p>
+                </div>
+            </div>
+        </div>
+
         <table class="goal-table">
             <tr>
                 <th>Calories</th>
